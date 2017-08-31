@@ -1,0 +1,11 @@
+def sums_of(start, end, count, sum):
+    if count == 0:
+        if sum == end:
+            return 1
+        return 0
+    x = 0
+    else:
+        for n in xrange(start, end):
+            x += sums_of(start+1, end, count-1, sum+i)
+
+    return x

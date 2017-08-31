@@ -1,0 +1,683 @@
+body
+{
+font-size:12px;
+font-family: "Helvetica","Arial","Sans Serif";
+margin:0px;
+padding:0px;
+}
+A.link
+{
+color:#531DF3;
+text-decoration:none;
+}
+A:visited 
+{
+color:#531DF3;
+}
+A:active 
+{
+color:#531DF3;
+}
+A:hover 
+{
+color:#531DF3;
+}
+A.glosnotfound  
+{
+color:#000000 !important;
+font-weight:bold;
+}
+A.glos
+{
+color:black;
+border-bottom:2px dotted black !important;
+}
+DIV.sectbeginning P A.glos B
+{
+color:#000000 !important;
+}
+DIV.asset_link
+{
+color:#1086d9;
+cursor:pointer;
+text-decoration:underline;
+}
+DIV.asset_watch
+{
+background: url('../../images/video.gif');
+background-position: 0px 0px;
+background-repeat: no-repeat;
+position:relative;
+left: 10px;
+display:block;
+padding-left:30px;
+clear:left;
+margin-top:20px;
+padding-bottom:10px;
+color:#1086d9;
+cursor:pointer;
+}
+DIV.asset_inline
+{
+background: url('../../images/inline.gif');
+background-position: 0px 0px;
+background-repeat: no-repeat;
+position:relative;
+left: -30px;
+display:block;
+padding-left:30px;
+clear:left;
+margin-top:20px;
+}
+DIV.asset_Interactive
+{
+background: url('../../images/anim.gif');
+background-position: 0px 0px;
+background-repeat: no-repeat;
+position:relative;
+left: -30px;
+display:block;
+padding-left:30px;
+clear:left;
+margin-top:20px;
+padding-bottom:5px;
+}
+SPAN.chappre
+{
+	text-transform:capitalize;
+}
+SPAN.chappost
+{
+text-transform:uppercase;
+}
+
+
+#reader p
+{
+margin-top:0px;
+margin-bottom:7px;
+}
+
+A.glos
+{
+font-weight:bold;
+} 
+
+/****************** Above are Comman properties ***********/
+
+DIV.chbeginning
+{
+	background-color:#e8e7c0;
+	padding:20px 20px 10px 10px;
+}
+
+DIV.chbeginning UL.verbatimtoc LI
+{
+	list-style-type:none;
+	color:#0c6680;
+	font-size:11pt;
+	padding-bottom:6px;
+}
+
+.lookngahd
+{
+	display:block;
+	margin-top:15px;
+	margin-bottom:5px;
+	color:#c95d1a;
+	font-size:14pt;
+	font-weight:bold;
+	letter-spacing:2px;
+	border-bottom: 2px dashed #B3B4B7;
+	padding-bottom:2px;
+}
+
+DIV.chbeginning DIV.exercises
+{
+	margin-bottom:20px;
+}
+
+DIV.chbeginning P B
+{
+	color:#0c6680;
+	font-size:10pt;
+	text-transform:capitalize;
+}
+
+.ahead
+{
+	display:block;
+	margin-bottom:15px;
+	font-size:16pt;
+	font-weight:bold;
+	color:#790101;
+	border-bottom: 2px dashed #B3B4B7;
+	padding-bottom:2px
+	
+}
+
+.bhead
+{
+	display:block;
+	margin-bottom:5px;
+	margin-top:20px;
+	font-size:13pt;
+	font-weight:bold;
+	color:#0c6680;
+}
+
+DIV.figure DIV.caption SPAN.title
+{
+	color:#0c6680;
+	font-weight:bold;
+	padding-right:5px;
+	font-size:9pt;
+}
+
+DIV.figure DIV.caption
+{
+	font-size:8pt;
+	margin-top:5px;
+}
+
+SPAN.greycap,DIV.figure DIV.sourcenote
+{
+	color:#636466;
+	padding-left:5px;
+}
+
+DIV.figure
+{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+DIV.considerthesource
+{
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+DIV.considerthesource SPAN.considrsrctl
+{
+	background-color:#66AAA1;
+	color:#ffffff;
+	padding:25px 0px 10px 20px; 
+	font-size:18pt;
+	font-weight:bold;
+	display:block;
+	border-left:30px solid #3D9261;
+}
+
+DIV.considerthesource DIV.subtitle
+{
+	font-size:13pt;
+	color:#630660;
+	font-weight:bold;	
+	padding-top:15px; 
+	margin-bottom:20px;
+}
+
+DIV.considerthesource DIV.sfinbox1
+{
+	background-color:#F2F8E9;
+	padding:0px 10px 20px 15px;
+	border-left:30px solid #A7C787;
+
+}
+
+SPAN.spfintl
+{
+	font-size:11pt;
+	font-weight:bold;
+	border-bottom:1px solid #333333;
+	padding-bottom:5px;
+	display:block;
+	margin-top:20px;
+	margin-bottom:10px;
+}
+
+DIV.considerthesource SPAN.spfintl
+{
+	color:#3E9361;
+}
+
+DIV.specialfeature DIV.sourcenote
+{
+	font-size:8pt;
+	margin-top:10px;
+}
+
+SPAN.drpcap
+{
+	float: left;
+    font-size: 30pt;
+	padding-top: 8px;
+    padding-right: 2px;
+	padding-bottom:5px;
+	margin-top:2px;
+}
+
+DIV.considerthesource SPAN.drpcap
+{
+	color:#3E9361;
+}
+
+DIV.debatingthepast,DIV.americainworld
+{
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+DIV.debatingthepast SPAN.debatpasttl
+{
+	background-color: #A09600;
+    border-left: 30px solid #6A7D15;
+    color: #FFFFFF;
+    display: block;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 25px 0 25px 120px;
+}
+
+
+DIV.debatingthepast DIV.subtitle
+{
+	font-size:18pt;
+	color:#636466;
+	padding-top:70px; 
+	margin-bottom:10px;
+	padding-bottom:10px;
+	border-bottom:#636466 solid 1px;	
+}
+
+DIV.sfinbox2
+{
+	background-color:#E5ECE8;
+	padding:0px 10px 20px 15px;
+	border-left:30px solid #A7C787;
+
+}
+
+DIV.debatingthepast SPAN.drpcap
+{
+	color:#A09600;
+}
+
+DIV.debatingthepast SPAN.spfintl
+{
+	color:#A09600;
+}
+
+DIV.americainworld SPAN.americawrdtl
+{
+	background-color:#0C6680;
+	color:#ffffff;
+	padding:25px 0px 10px 220px; 
+	font-size:12pt;
+	font-weight:bold;
+	display:block;
+	border-left:30px solid #746B13;
+}
+
+
+DIV.americainworld DIV.subtitle
+{
+	font-size:18pt;
+	color:#636466;
+	padding-top:65px; 
+	margin-bottom:10px;
+	padding-bottom:10px;
+	border-bottom:#636466 solid 1px;
+	
+}
+
+DIV.sfinbox3
+{
+	background-color:#E4EBEF;
+	padding:0px 10px 20px 15px;
+	border-left:30px solid #746B13;
+
+}
+
+DIV.americainworld SPAN.drpcap
+{
+	color:#0C6680;
+}
+
+DIV.americainworld SPAN.spfintl
+{
+	color:#0C6680;
+}
+
+
+.endhead
+{
+	display:block;
+	margin-bottom:10px;
+	font-size:16pt;
+	margin-top:15px;
+	font-weight:bold;
+	color:#790101;
+	border-bottom: 2px dashed #B3B4B7;
+	padding-bottom:2px;
+}
+
+UL.qalist LI
+{
+	padding-left: 20px;
+    text-indent: -20px;
+}
+
+UL.qalist,DIV.apx-section UL.nobullet
+{
+	margin-left:-30px !important;
+}
+
+SPAN.qans
+{
+	font-weight:bold;
+}
+
+DIV.patternsofpopularculture
+{
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+
+DIV.patternsofpopularculture SPAN.poplucltrtl
+{
+	background-color: #FEB811;
+    border-left: 30px solid #C4112F;
+    color: #FFFFFF;
+    display: block;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 25px 0 25px 100px;
+}
+
+DIV.patternsofpopularculture DIV.subtitle
+{
+	font-size:18pt;
+	color:#636466;
+	padding-top:80px; 
+	margin-bottom:10px;
+	padding-bottom:10px;
+	border-bottom:#636466 solid 1px;
+	
+}
+
+DIV.spinbox4
+{
+	background-color:#FAF2DD;
+	padding:0px 10px 20px 15px;
+	border-left:30px solid #C4112F;
+
+}
+
+DIV.patternsofpopularculture SPAN.drpcap
+{
+	color:#C4112F;
+}
+
+DIV.patternsofpopularculture SPAN.spfintl
+{
+	color:#C4112F;
+}
+
+IMG.ppcicon1
+{
+	display: inline-block;
+    margin-left: -95px;
+    position: absolute;
+}
+
+IMG.ppcicon2
+{
+ padding-left: 15px;
+ position: absolute;
+}
+
+ 
+IMG.spficon
+{
+	margin-left: -105px;
+    margin-top: -10px;
+    position: absolute;
+}
+
+DIV.table_none TABLE TR TD
+{
+	padding-right:40px;
+}
+
+DIV.emtab TABLE TR TD
+{
+	padding:2px 20px 2px 0px;
+}
+
+DIV.emtab TABLE TR TH
+{
+	color:#0D6681;
+	padding-bottom:20px;
+	padding-right:20px;
+}
+
+DIV.emtab TABLE TR TD.col2
+{
+	width:105px;
+}
+
+.nodisplay
+{
+	display:none;
+}
+
+.endahead
+{
+	display:block;
+	margin-bottom:5px;
+	margin-top:20px;
+	font-size:16pt;
+	font-weight:bold;
+	color:#790101;
+	border-bottom: 2px dashed #B3B4B7;
+	padding-bottom:2px;
+}
+
+DIV.apx-section SPAN.bhead
+{
+	color:#647984;
+}
+
+SPAN.balcktl
+{
+	font-size:10pt;
+	font-weight:bold;
+	display:block;
+	margin-bottom:10px;
+	margin-top:10px;
+}
+
+P.center
+{
+	text-align:center;
+}
+
+SPAN.endartcl
+{
+	font-size:12pt;
+	display:block;
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:5px;
+}
+
+SPAN.centertl
+{
+	display:block;
+	margin-top:10px;
+	margin-bottom:5px;
+	text-align:center;
+}
+
+DIV.apx-section DIV.subtitle I
+{
+	display:block;
+	text-align:center;
+}
+
+DIV.appendix
+{
+	background-color:#F0F3F6;
+	padding-bottom:10px;
+}
+
+DIV.apx-section
+{
+	background-color:#F0F3F6;
+	padding:20px 10px;
+	margin-top:-20px;
+}
+
+DIV.debatingthepast SPAN.spfdot
+{
+	color: #A09600;
+    display: inline-block;
+    font-size: 18pt;
+    margin-top: 1px;
+    padding-left: 5px;
+    position: absolute;
+}
+
+DIV.americainworld SPAN.spfdot
+{
+	color: #0C6680;
+    display: inline-block;
+    font-size: 18pt;
+    margin-top: 1px;
+    padding-left: 5px;
+    position: absolute;
+}
+
+DIV.patternsofpopularculture SPAN.spfdot
+{
+	color: #EE1C25;
+    display: inline-block;
+    font-size: 18pt;
+    margin-top: 1px;
+    padding-left: 5px;
+    position: absolute;
+}
+
+IMG.spficon2
+{
+	margin-left: -220px;
+    position: absolute;
+	margin-top:-24px;
+}
+
+DIV.chapter P
+{
+    margin-bottom: -7px !important;
+}
+
+IMG.opnerimg
+{
+	display:block;
+	margin-top:20px;
+	margin-bottom:10px;
+}
+
+SPAN.cons
+{
+border-bottom: 2px dashed #9CDCF9;
+padding-bottom:2px;
+} 
+
+SPAN.depast
+{
+border-bottom: 2px dashed #BEB452;
+padding-bottom:2px;
+} 
+
+SPAN.america
+{
+border-bottom: 2px dashed #508BA3;
+padding-bottom:2px;
+} 
+
+SPAN.pattern
+{
+border-bottom: 2px dashed #FFD88F;
+padding-bottom:2px;
+
+} 
+
+DIV.blockquote P
+{
+font-size:8pt !important;
+margin-left:50px;
+padding-top:10px;
+padding-bottom:10px;
+} 
+
+P.blockq 
+{
+font-size:8pt !important;
+margin-left:30px;
+padding-top:10px;
+padding-bottom:10px;
+} 
+
+P.rightpara
+{
+ text-align: right !important;
+    padding-right: 25px !important;
+}
+
+
+/*pro*/
+/*
+
+DIV.chbeginning DIV.exercises OL.number LI
+{
+color:#0D6681;
+}
+
+DIV.chbeginning DIV.exercises OL.number LI P
+{
+color:#000000;
+} 
+
+
+
+DIV.sfinbox1 DIV.subsection OL.number LI  
+{
+color:#3E9360;
+}
+
+DIV.sfinbox1 DIV.subsection OL.number LI p
+{
+color:#000000;
+} 
+
+DIV.sfinbox2 DIV.subsection OL.number LI
+{
+color:#A09600;
+}
+
+
+DIV.sfinbox2 DIV.subsection OL.number LI p
+{
+color:#000000;
+}
+
+*/
+
+
+SPAN.sms
+{
+  text-transform: lowercase;
+} 

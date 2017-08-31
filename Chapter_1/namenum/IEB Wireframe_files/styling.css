@@ -1,0 +1,444 @@
+/* --------- UNIVERSALS ---------- */
+
+iframe.wnd
+{
+	display:none;/*sorry for IE5*/
+	display/**/:block;/*sorry for IE5*/
+	position:absolute;/*must have*/
+	top:0;/*must have*/
+	left:0;/*must have*/
+	z-index:-1;/*must have*/
+	filter:mask();/*must have*/
+	width:1000px;/*must have for any big value*/
+	height:1000px/*must have for any big value*/;
+}
+
+
+a {text-decoration: none;}
+a:hover  {text-decoration: none;
+}
+
+a img {border: none;}
+
+form {
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+}
+
+.link {
+	cursor: pointer;
+}
+
+.glos {
+	color: #eb0505;
+	cursor: pointer;
+}
+
+#glossarypop {
+	z-index: 1000;
+	position: absolute;
+	border: 1px solid #666;
+	color: #333;
+	font: 10px Verdana;
+	width: 250px;
+	padding: 4px;
+	display: none;
+	
+}
+
+
+#glossarypop div.equation div.graphic {
+	max-width:300px;
+	text-align:left;
+	
+}
+
+DIV.noteconts DIV.equation DIV.graphic {
+	max-width:200px;
+	text-align:left;
+	
+}
+
+div.assignedtag {
+	position: absolute;
+	left: 0px;
+
+	background: url('../images/assigned-right.gif');
+	width: 63px;
+	height: 15px;
+}
+
+/* ---------- MENU BARS ------------------------- */
+
+.header_bar {
+  z-index: 20;
+  display: none;
+
+  margin: 0px;
+}
+
+#pagenumBar.header_bar {
+	z-index: 19;
+	display: block;
+	position: absolute;
+}
+
+.header_bar .navclose {
+  margin: 3px 5px 0px 3px;
+	display: inline;
+}
+
+.header_bar UL {
+  padding: 0;
+  display: inline;
+  margin: 0px 0px 0px 15px;
+  padding: 0px 0px 0px 0px;
+}
+
+.header_bar LI, .header_bar SELECT, .header_bar INPUT {
+  display: inline;
+  font-family: Verdana;
+  font-size: 10px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
+  color: #666;
+}
+
+.header_bar SELECT {
+  font-size: 10px;
+  height: 16px;
+  border: 1px #666 solid;
+  position: relative;
+  top: -2px;
+}
+
+body.ie .header_bar SELECT {
+  top: 0px;
+}
+
+.header_bar INPUT {
+  font-size: 12px;
+  height: 15px;
+  border: 1px #666 solid;
+  position: relative;
+  top: -2px;
+}
+
+body.ie .header_bar INPUT {
+  height: 17px;
+}  
+
+.header_bar INPUT.submit {
+  height: 17px;
+  position: relative;
+  top: -2px;
+}
+
+body.ie .header_bar INPUT.submit {
+}
+
+.header_bar DIV {
+  display: inline;
+}
+
+.header_bar A {
+  color: #666;
+  text-decoration: none;
+  padding: 0px 10px 0px 0px; 
+}
+
+.header_bar A:hover {
+  color:#333;
+}
+
+
+/* ------------ Page Turners and Number Popups -------------- */
+
+#botturner {
+	margin: 10px 0px 10px 0px;
+	width: 100%;
+	font: 13px Arial;
+	font-weight: bold;
+}
+
+#glossarypop {
+	background-color: lightblue;
+}
+
+/* ---------- POPUP WINDOWS ---------- */
+
+
+#mediawnd {
+	width: 100%;
+	height: 100%;
+}
+
+#mediawnd {
+	background: none;
+}
+
+
+#mediawnd #mediahead {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 24px;
+
+	border-bottom: 1px solid black;
+
+	text-align: right;
+	background-color: #ccc;
+
+}
+
+#mediawnd #mediahead img {
+	margin: 3px;
+	cursor: pointer;
+}
+
+#mediawnd #mediahead #medialist {
+	position: absolute;
+	top: 2px;
+	right: 25px;
+	width: 130px;
+	font: 12px arial;
+	color: #333;
+}
+
+#mediawnd #mediabottom {
+	position: absolute;
+	left: 0px;
+	padding: 6px 8px 6px 6px;
+	width: 100%;
+	bottom: 0px;
+	border-top: 1px solid black;
+	background-color: #e4e3e3;
+	z-index: 5;
+}
+
+#mediawnd #mediabottom #mediacaption {
+display:block;
+width:840px;
+font: 12px "Arial" Arial;
+}
+
+#mediawnd #mediabottom #mediacaption div {
+	display: inline;
+	padding-right: 10px;
+	font-weight: bold;
+}
+
+#mediawnd #mediabottom #mediacontrols {
+	float: right;
+	margin-right: 8px;
+	font: 11px verdana;
+	text-decoration: underline;
+}
+
+#mediawnd #mediabottom #mediacontrols img {
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+#mediawnd #mediacont {
+	position:absolute;
+	width: 100%;
+	top: 25px;
+	left: 0px;
+	text-align: center;
+	overflow: auto;
+	background-color: #fff;
+}
+
+.swfwnd #mediacont, .qtwnd #mediacont {
+	overflow: hidden;
+}
+
+.swfwnd #mediacaption {
+	display:none;
+}
+
+.qtwnd #mediacaption {
+	display:none;
+}
+
+/* ------ MANAGE CONTENT ----- */
+
+#managecontent {
+	z-index: 2000;
+	width: 570px;
+	height: 330px;
+	position: absolute;
+	font: 13px Arial;
+	border: 1px solid black;
+	display: none;
+	top: 90px;
+	left: 290px;
+	color: #333;
+	background-color: #f1e8d0;
+}
+
+#managecontentcont {
+	margin: 0px 20px 0px 20px;
+}
+
+#managecontentcont p.managecontpara {
+	margin: 20px 0px 20px 0px;
+	font: 20px Arial;
+}
+
+#managecontentcont p.managecontpara a {
+	text-decoration: underline;
+	font-weight: bold;
+	color: #333;
+}
+
+/* --------- SETTINGS WINDOW -------- */
+
+#settingswnd {
+	z-index: 2000;
+	width: 1px;
+	height: 1px;
+	position: absolute;
+	font: 13px Arial;
+	display: none;
+	top: 40px;
+	left: 70px;
+	color: #333;
+	padding: 0px;
+}
+
+#settingswnd table {
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid black;
+	border-bottom: none;
+}
+
+#settingswnd td {
+	padding: 5px 10px 5px 10px;
+	background-color: white;
+	border-bottom: 1px solid black;
+}
+
+#settingswnd td.setname {
+	white-space: nowrap;
+
+	font-weight: bold;
+}
+
+#settingswnd td table, #settingswnd td table td {
+	border: none;
+	padding: 0px;
+}
+
+#settingswnd .buttons {
+	padding: 10px 0px 10px 0px;
+	text-align:center;
+}
+
+#settingswnd .buttons input {
+	font-size: 12px;
+	margin: 0px 5px 0px 5px;
+	padding: 2px 5px 2px 5px;
+}
+
+#settingswnd INPUT {
+	color: #333;
+	vertical-align: middle;
+	position: relative;
+	top: -1px;
+	margin-right: 2px;
+}
+
+/* ----------- HELP WINDOW -------- */
+
+#helpwnd {
+	display: none;
+}
+
+#helpwndinner1 {
+	position: absolute;
+
+	top: 40px;
+	left: 35px;
+
+	width: 608px;
+	height: 504px;
+
+	padding-right: 41px;
+	padding-bottom: 35px;
+
+	z-index: 1999;
+
+	background-image: url('../images/shadow_help.png');
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+
+body.ie #helpwndinner1 {
+
+	background: none;
+	background-color: #888;
+	top: 92px;
+	left: 277px;
+	filter:
+		progid:DXImageTransform.Microsoft.Blur(pixelradius=10)
+		alpha(opacity=80)
+	;
+}
+
+#helpwndinner {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+
+	width: 590px;
+	height: 490px;
+
+	z-index: 2000;
+
+	padding: 10px;
+
+	color: #333;
+	border: 1px solid black;
+	background-color: #eee;
+}
+
+body.ie #helpwndinner {
+	width: 613px;
+}
+
+#helpwnd p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	font: 11px verdana;
+	line-height: 17px;
+}
+
+#helpwnd h1 {
+	margin: 0px;
+	padding: 0px;
+	color: #666;
+	font: 24px arial;
+}
+
+#helpwnd img {
+	float: right;
+}
+
+#helpwnd a {
+	color: red;
+	text-decoration: underline;
+}
+
+#glossarypop div.newpageo {
+	display: none;
+}
+
+#reader object {
+	vertical-align: middle;
+}

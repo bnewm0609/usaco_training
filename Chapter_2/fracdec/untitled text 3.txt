@@ -1,0 +1,14 @@
+for cmu admission@andrew.cmu.edu as pdf include name and commonapp id
+
+CMU
+for cmu admission@andrew.cmu.edu as pdf include name and commonapp id
+
+
+Duke
+undergrad-admissions@duke.edu as pdf include name and commonapp id
+
+Wash U
+
+
+Columbia
+ugrad-confirm@columbia.edu

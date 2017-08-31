@@ -1,0 +1,65 @@
+/* ---------- HTML TAGS -------------------------{{{*/
+
+html, body {
+	margin: 10px;
+	padding: 0px;
+
+	font: 13px arial;
+	line-height: 17px;
+	color: #333;
+}
+
+/* ---------- HTML TAGS -------------------------{{{*/
+
+div.backpacksec {
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+	margin: 10px 5px 10px 5px;
+	padding: 5px;
+}
+
+div.backpacksec .section {
+	font: 16px arial;
+	font-weight: bold;
+}
+
+div.backpacksec ul {
+	margin: 0px;
+	padding: 0px 0px 0px 15px;
+}
+
+.backpackhead {
+	margin: 0px 0px 10px 10px;
+	font: 20px verdana;
+}
+
+.chapli {
+	margin-bottom: 10px;
+	font: 15px verdana;
+}
+
+
+/* Printing */
+
+div.printhead {
+	width: 960px;
+	height: 61px;
+}
+
+div.printhead div.printout {
+	float: right;
+	width: 85px;
+	height: 26px;
+	background: url('../images/printhead_print.gif');
+	cursor: pointer;
+	margin: 21px 20px 13px 20px;
+}
+
+div.printhead div.closewnd {
+	float: right;
+	width: 102px;
+	height: 26px;
+	background: url('../images/printhead_close.gif');
+	cursor: pointer;
+	margin: 21px 20px 13px 20px;
+}

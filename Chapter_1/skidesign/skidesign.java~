@@ -1,0 +1,152 @@
+/*
+ID: cbnewma1
+LANG: JAVA
+TASK: skidesign
+*/
+import java.util.*;
+import java.io.*;
+
+public class skidesign {
+	public static void main(String[] args) throws IOException {
+		BufferedReader f = new BufferedReader(new FileReader("skidesign.in"));
+		PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("skidesign.out")));
+		
+		int numHills = Integer.parseInt(f.readLine());
+		Hill[] hills = new Hill[numHills];
+		for (int i = 0; i < numHills; i++) {
+			hills[i] = new Hill(Integer.parseInt(f.readLine()));
+		}
+		
+		int minCost = getMinCost(hills);
+		
+		out.println(minCost);
+		// System.out.println("\n");
+// 		for (Hill h: hills) {
+// 			System.out.println(h);
+// 		}
+		out.close();
+		System.exit(0);
+	}
+	
+	
+	
+	
+	
+	
+	
+	public static int getMinCost(Hill[] hills) {		
+		Hill minHill = new Hill(101);
+		Hill maxHill = new Hill(0);
+		int maxHeight = 0; 
+		int minHeight = 101;
+		
+		int numMin;
+		int numMax;
+		int lastCost = 0;
+		int prevCMin = 0;
+		int prevCMax = 0;
+		while (diffBtwAll(hills, 17)) {
+			numMin = 0;
+			numMax = 0;
+			minHeight = minHill.getCurrHeight();
+			maxHeight = maxHill.getCurrHeight();
+			for (Hill hill: hills) {
+				if (hill.getCurrHeight() < minHeight) {
+					//System.out.println("MinHeight: " + minHeight + ":\t" + hill);
+					 
+					numMin = 0;
+					
+					minHill = hill;
+					minHeight = hill.getCurrHeight();
+				} else if (hill.getCurrHeight() == minHeight && minHill != hill) {
+					numMin++;
+				} 
+				
+				if (hill.getCurrHeight() > maxHeight) {
+					
+					numMax = 0;
+
+					maxHill = hill;
+					maxHeight = hill.getCurrHeight();
+				} else if (hill.getCurrHeight() == maxHeight && maxHill != hill) {
+						numMax++;
+				} 
+			}
+		
+			//System.out.print("Min Hill: " + minHill+ "\t\t");
+			//System.out.println("Max Hill: " + maxHill);		
+		
+			if (numMin > numMax) {
+				maxHill.decHeight();
+				//System.out.println("HEY MAX");
+
+			} else if (numMax > numMin) {
+				minHill.incHeight();
+				//System.out.println("HEY MIN");
+			} else {
+				prevCMin = minHill.getCost();
+				prevCMax = maxHill.getCost();
+				
+				minHill.incHeight(); maxHill.decHeight();
+				int minCost = minHill.getCost();
+				int maxCost = maxHill.getCost();
+				if (minCost > maxCost) {
+					minHill.decHeight();
+					//lastCost = maxCost - prevCMax;
+				} else {
+					maxHill.incHeight();
+					//lastCost = minCost - prevCMin;
+				}
+			}
+		}		
+		//System.out.print("Min Hill: " + minHill+ "\t\t");
+		//System.out.println("Max Hill: " + maxHill + "\n");
+		return sumUpCosts(hills) - lastCost;
+		
+	}
+	
+	public static boolean diffBtwAll(Hill[] hills, int thresh) {
+		for (int i = 0; i < hills.length; i++) {
+			for (int j = 0; j < hills.length; j++) {
+				if (hills[i].getCurrHeight() - hills[j].getCurrHeight() > thresh) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+	
+	public static int sumUpCosts(Hill[] hills) {
+		int total = 0;
+		for (Hill hill: hills) {
+			//System.out.println(hill);
+			total += hill.getCost();
+		}
+		return total;
+	}
+}
+
+class Hill {
+	private int startHeight;
+	private int currHeight;
+	
+	public Hill(int sh) {
+		startHeight = sh;
+		currHeight = sh;
+	}
+	
+	public void decHeight() {currHeight--;}
+	public void incHeight() {currHeight++;}
+	
+	public int getCurrHeight() {return currHeight;}
+	
+	public int getCost() {
+		return (int) Math.pow(startHeight-currHeight, 2);
+	}
+	
+	//for debugging
+	@Override
+	public String toString() {
+		return "Start: " + startHeight + "\tCurrent: " + currHeight + "\tPrice: $" + getCost();
+	}
+}
