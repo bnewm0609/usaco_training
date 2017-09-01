@@ -1,0 +1,8 @@
+#ignore compiled java class files
+Chapter_*/**/*.class
+#ignore input files
+Chapter_*/**/*.in
+#ignore output files
+Chapter_*/**/*.out
+#ignore emacs files
+*~
